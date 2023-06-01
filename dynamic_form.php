@@ -106,7 +106,7 @@ function wpdocs_bartag_func( $atts ) {
 				$output='<form id="regForm" action="">
 		<h1>'.$data.'</h1>';
 		
-		foreach($steps as $step){
+		foreach( (array) $steps as $step){
 		
 		$s_id=$step['id'];
 		$form_api='https://private-anon-69110eff5f-zippyform.apiary-mock.com/form/dynamic-form/'.$form_id.'/fields/'.$s_id;
